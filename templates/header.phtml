@@ -1,8 +1,5 @@
  <?php 
- $langs = array('fr', 'en');
- function langname($lang){
- 	return $lang === 'fr' ? 'Français' : 'English';
- }
+
 
  ?>
  
@@ -25,39 +22,36 @@
   <li>
     <a href="<?php printer('url_etalab_on_formater')?>" target="_blank"><?php printer('etalab_on_formater')?></a>
   </li>
+  <!-- demos -->
+  <li class="menu-demo" style="min-width:200px;">
+   <a id ="#demonstration" href="#demonstration">
+       <span style="margin-left:0.3em;"><?php printer('demonstration');?></span>
+    </a>
+    <ul class="sub-menu">
+   <?php foreach($data->demonstrations as $demonstration):?>
+    <li>
+       <a href="<?=$demonstration->url?>?lang=<?=$lang?>" title="<?=$demonstration->title->{$lang}?>">
+       <?=$demonstration->title->{$lang}?>
+       </a>
+    </li>
+   <?php endforeach;?>
+    </ul>
+   </li>
   <!-- language switcher -->
-  <style>
-  ul.sub-menu {
-  position:absolute;
-  padding:0;
-  max-width:150px;
-  display:none;
-  }
-   #witcher:hover + ul.sub-menu {
-     display:block;
-   }
-  ul.sub-menu li{
-    float: left;
-    position: relative;
-    margin-left:0;
-    text-align: left;
-  }
-  </style>
-  <li><a id ="switcher" href="#pll_switcher"><img src="<?=IMAGES_URL?>/<?=$lang?>.png" title="<?=langname($lang)?>" alt="<?=langname($lang)?>">
-  <span style="margin-left:0.3em;"><?=langname($lang)?></span></a>
+
+  <li>
+    <a id ="#language_switcher" href="#language_switcher">
+       <img src="<?=IMAGES_URL?>/<?=$lang?>.png" title="<?=$language['language'][$lang]?>" alt="<?=$language['language'][$lang]?>">
+       <span style="margin-left:0.3em;"><?=$language['language'][$lang]?></span>
+    </a>
     <ul class="sub-menu"> 
-     <?php foreach($language['other_language'] as $key => $value):?>
+     <?php foreach($language['language'] as $key => $value):?>
+     <?php if ($key !== $lang): ?>
        <li>
-       <a href="<?=$language['url_other_language'][$key]?>"  lang="<?=$key?>">
+       <a href="<?=$language['url_language'][$key]?>"  lang="<?=$key?>">
        <img src="<?=IMAGES_URL?>/<?=$key?>.png"> <?=$value?></span></a>
        </li>
+     <?php endif;?>
      <?php endforeach;?>
   </ul>
-   --
-  
-  <li>
-  
-     <a href="<?php printer('url_other_language')?>"><?php printer('other_language')?></a>
-  </li>
-
 </div>

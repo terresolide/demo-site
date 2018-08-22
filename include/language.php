@@ -18,13 +18,13 @@ $language =   array(
 			"fr" => "https://www.poleterresolide.fr/projets/en-cours/etalab/",
 			"en" => "https://www.poleterresolide.fr/projets/en-cours/etalab/"
 	),
-	"other_language" => array(
-			"fr" => "English",
-			"en" => "Français"
+	"language" => array(
+	        "fr" => "Français",
+			"en" => "English"
 	),
-	"url_other_language" => array(
-			"fr" => $urlGet[0]. "?lang=en",
-			"en" => $urlGet[0]. "?lang=fr"
+	"url_language" => array(
+			"fr" => $urlGet[0]. "?lang=fr",
+			"en" => $urlGet[0]. "?lang=en"
 	),
 	"locale" => array(
 		"fr" => "fr_FR",

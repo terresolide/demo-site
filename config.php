@@ -7,3 +7,7 @@ define('TEMPLATE_DIR', realpath( APP_DIR.'/templates'));
 define('INCLUDE_DIR', realpath( APP_DIR.'/include'));
 define('ARTICLE_DIR', realpath( APP_DIR.'/article'));
 define('CONTENT_DIR', realpath( APP_DIR.'/content'));
+
+// load demonstrations informations
+$content_file = file_get_contents( DEMONSTRATIONS_FILE);
+$data = json_decode($content_file);
