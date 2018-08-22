@@ -13,14 +13,14 @@
 	<link href="images/formater_favicon-40x40.png" rel="icon" sizes="32x32">
 	<style>
 	div.content{
-	  margin-bottom: 100px;
+	   margin-bottom: 100px;
 	}
 	div.partenaire {
-	    clear: both;
-	    position: relative;
-	    z-index: 10;
-	    height: 70px;
-	    margin-top: 30px;
+        clear: both;
+        position: relative;
+        z-index: 10;
+        height: 70px;
+        margin-top: 30px;
     }
 	div.partenaire div{
 	     display:inline-block;
@@ -35,51 +35,57 @@
 	     opacity:1;
 	}
     a{
-    color: #754a15;
-    text-decoration:none;
+        color: #754a15;
+        text-decoration:none;
     }
     a:hover{
         color: #8c0209;
     }
-     #header li{
-    padding:0px;
-  }
-  #header li a:hover{
-    color:#9d0000;
-    font-size:1.01rem;
-  }
-  ul.sub-menu {
-  position:absolute;
-  padding:5px 0 0 0;
-  max-width:150px;
-  display:none;
-  margin: 0;
-    background:white;
-    z-index:2000;
-     border: 1px dotted grey;
-  }
-   li:hover > ul.sub-menu {
-     display:block;
-     height:auto;
-   }
- #header ul.sub-menu li{
-    float: left;
-    position: relative;
-    padding: 3px 3px 3px 8px;
-    margin-left:0;
-    line-height:1;
-    text-align: left;
-  
-  }
-  li.menu-demo ul{
-   
-    box-sizing: border-box;
-    min-width: 213px;
- }
-  li.menu-demo{
-    min-width:200px;
-  }
-  li.menu-demo li{
-    min-width:200px;
-  }
+    #header li,
+    #slide2 li{
+        padding:0px;
+    }
+    #header li a:hover,
+    #slide2 li a:hover{
+        color:#9d0000;
+        font-size:1.01rem;
+    }
+    ul.sub-menu {
+        position:absolute;
+        padding:5px 0 0 0;
+        max-width:150px;
+        display:none;
+        margin: 0;
+        background:white;
+        z-index:2000;
+        border: 1px dotted grey;
+    }
+    li:hover > ul.sub-menu {
+        display:block;
+        height:auto;
+    }
+    #header ul.sub-menu li,
+    #slide2 ul.sub-menu li{
+        float: left;
+        position: relative;
+        padding: 3px 3px 3px 8px;
+        margin-left:0;
+        line-height:1;
+        text-align: left;
+    }
+    li.menu-demo ul{
+        box-sizing: border-box;
+        min-width: 213px;
+    }
+    li.menu-demo{
+        min-width:200px;
+    }
+    li.menu-demo li{
+        min-width:200px;
+    }
+    .menu-demo li:hover{
+        padding-left:12px;
+        -webkit-transition: padding 1s ease; /* Safari */
+        transition: padding 1s ease;
+    }
 	</style>

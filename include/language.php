@@ -7,6 +7,10 @@ if (isset($_GET['lang']) && in_array($_GET['lang'], array('fr', 'en'))) {
 }
 $urlGet = explode("?","http://" . $_SERVER["HTTP_HOST"].$_SERVER['REQUEST_URI']);
 $language =   array(
+    "demonstration" => array(
+            "fr" => "Démonstrations",
+            "en" => "Demonstrations"
+    ),
 	"url_new"=> array(
 			"fr" => "https://www.poleterresolide.fr",
 			"en" => "https://en.poleterresolide.fr"),
