@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<?php include_once TEMPLATE_DIR.'/meta.phtml'?>
+
+    <style>
+    body, html {
+        height: 100%;
+        background:#fff;
+        margin:0;
+        padding:0;
+        font-size:16px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    #slide2,
+    #slide5{
+       /* background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;*/
+        height:15%;
+        background:#fff;
+        box-shadow:  0 0 5px 2px #282a2d; 
+    }
+    #slide2 ul{
+    	list-style-type: none;
+    }
+    #slide2 ul li{
+       display: inline-block;
+       margin-right: 10px;
+    }
+    
+    #slide3,
+    #slide6 {
+        background-image: url(images/bkg-img2.jpg);
+        min-height:200px;
+        height: 30%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #slide3{
+      height:30%;
+    }
+    #slide4,
+    #slide7 {
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background:#fff;
+        text-align:center;
+    }
+    #slide4{
+        height: 55%;
+    }
+    #slide7{
+        height:70%;
+    }
+    .slide_inside{
+        padding:30px;
+    }
+    #slide2 > div{
+        padding:10px 30px;display:inline;max-height:100%;padding-left:10%;"
+    }
+    #slide7 .description{
+        margin: 20px auto;
+        max-width:900px;
+        word-wrap: break-word;
+    }
+    .site-branding .description{
+   font-size:2em;text-align:center; text-shadow:1px 1px #555;
+    }
+    .site-branding h1 a {
+        background-color: rgba(221,153,70,.5);
+        color: #fff;
+        text-decoration:none;
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 0 20px;
+        border: none;
+        font-size: 40px;
+        line-height: 50px;
+        text-transform: uppercase;
+        color: #FFF;
+    }
+    .site-branding p {
+        display: inline-block;
+        margin: 0;
+        padding: 0 10px;
+        color:#fff;
+        background-color: rgba(0, 0, 0, 0.3);
+        font-size: 18px;
+    }
+    .site-branding > div {
+        padding-left: 10%;
+        padding-right: 10%;
+        word-wrap: break-word;
+    }
+
+    .demonstration {
+      text-align:center;
+      margin:auto;
+    }
+    .demonstration > div {
+      border:1px solid grey;
+      border-radius:3px;
+      display:inline-block;
+      height:350px;
+      width:200px;
+      overflow: hidden;
+      box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      margin-left:15px;
+    }
+    .demonstration > div:first-child{
+      margin-left:0px;
+    }
+    .demonstration a:visited,
+    .demonstration a:focus{
+      outline: 0;
+    }
+    .demonstration h3 {
+      margin: 5px;
+    }
+    @media screen and (max-width: 700px){
+         .site-branding .description{
+            font-size:2em;
+         }
+         #slide7 .description{
+          /* font-size:1.5em;*/
+         }
+    }
+    @media screen and (max-width: 500px){
+         .site-branding .description{
+            font-size:2em;
+         }
+         #slide7 .description{
+            font-size:1.5em;
+         }
+    }
+    </style>
+  </head>
+  <body > 
+  <div id="slide2">
+   <?php include_once TEMPLATE_DIR . '/header.phtml';?>
+  </div>
+  <div id="slide3">
+    <div class="slide_inside site-branding">
+      <div>
+      <h1 class="site-title"><a href="<?php printer( "url_new");?>" rel="home"><?php printer("site_title");?></a></h1>
+      <p class="site-description"><?php printer( "slogan");?></p>
+    </div>
+  
+    </div>
+  </div>
+  <div id="slide4">
+   <div class="slide_inside site-branding">
+   		<div class="description" ><?php printer("presentation1");?>
+   		<div><a href="#slide6">&#x23F7;</a></div>
+   		</div>
+   </div>
+  </div>
+  <div id="slide6">
+    <div class="slide_inside site-branding">
+      
+    </div>
+  </div>
+  <div id="slide7">
+   <div class="slide_inside">
+   		<div class="description">
+   		<?php include_once TEMPLATE_DIR . "/list-demo.phtml"?>
+   		</div>
+   </div>	
+  </div>
+  <?php include_once TEMPLATE_DIR . "/foot.phtml";?>
+   <script type="text/javascript">
+    window.onbeforeunload = function () {
+        console.log('before unload')
+    	  window.scrollTo(0, 0);
+    	}
+ </script>
+  </body>
+</html>

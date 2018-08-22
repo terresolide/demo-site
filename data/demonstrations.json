@@ -1,0 +1,44 @@
+{
+	"demonstrations":
+		[
+			{
+				"title": {
+					"fr": "Série temporelle Mexico",
+					"en": "Temporal serie on Mexico"
+				},
+				"img": "http://demo.poleterresolide.fr/images/demos/serie-mexico.jpg",
+				"srcimg": "https://www.flickr.com/photos/baggis/3179149748",
+				"description": {
+					"fr": "Cette série a été calculée avec la chaine NSBAS et les images radar Sentinel1 du 8 juillet 2015 au 30 août 2017.",
+					"en": "This serie was calculated with NSBAS from Sentinel 1 radar images form July 8, 2015 to August 30, 2017"
+				},
+				"url": "/article/geotiff-serie"
+			
+		    },
+		    {
+				"title": {
+					"fr": "Interférogramme de la côte romaine",
+					"en": "Interferogram of the Roman coast"
+				},
+				"img": "http://demo.poleterresolide.fr/images/demos/rome.jpg",
+				"srcimg": "<a title='Per Mentnafunangann [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0) o GFDL (http://www.gnu.org/copyleft/fdl.html)], de la Wikimedia Commons' href='https://commons.wikimedia.org/wiki/File:Lago_d%27Averno_1.jpg'><img width='512' alt='Lago d&#039;Averno 1' src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lago_d%27Averno_1.jpg/512px-Lago_d%27Averno_1.jpg'></a>",
+				"description": {
+					"fr": "Il s'agit d'un ensemble de 3 sous-fauchées réalisées avec la chaîne de calcul NSBAS et les images Sentinel1 du 30 mai 2018 et 23 juin 2018",
+					"en": "If consists of a set of 3 sub-swath made with the NSBAS calculation chain and the Sentinel1 images of May 30,2018 and June 23,2018"
+				},
+				"url": "/article/geotiff-rome"
+			},
+			{
+				"title": {
+					"fr": "Interférogramme sur la Mer Noire",
+					"en": "Interferogram on the Black Sea"
+				},
+				"img": "http://demo.poleterresolide.fr/images/demos/abana.png",
+				"srcimg": "screenshot",
+				"description": {
+					"fr": "Il s'agit d'un ensemble de 2 sous-fauchées réalisées avec la chaîne de calcul NSBAS et les images Sentinel1 du 30 mai 2018 et 23 juin 2018",
+					"en": "If consists of a set of 3 sub-swath made with the NSBAS calculation chain and the Sentinel1 images of May 18,2018 and June 23,2018"
+				},
+				"url": "/article/geotiff-abana"
+		}]
+}

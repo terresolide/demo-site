@@ -1,0 +1,11 @@
+<?php 
+// load demonstrations informations
+$content_file = file_get_contents( DEMONSTRATIONS_FILE);
+$data = json_decode($content_file);
+?>
+<div class="demonstration">
+    <?php foreach($data->demonstrations as $demonstration){ 
+       include TEMPLATE_DIR . '/demo.phtml';
+    }?>
+ 
+</div>

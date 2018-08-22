@@ -1,0 +1,56 @@
+ <?php 
+ $langs = array('fr', 'en');
+ function langname($lang){
+ 	return $lang === 'fr' ? 'Français' : 'English';
+ }
+
+ ?>
+ 
+ <div>
+   <?php if(isset($home)):?>
+   <a href="<?php printer('url_new');?>" target="_blank">
+     <img src="<?=IMAGES_URL?>/logo-formater-transparent.png" style="max-height: 95%;height:70px;margin-top:10px;"/>
+   </a>
+   <?php else: ?>
+    <a href="<?=APP_URL?>?lang=<?=$lang?>">
+     <img src="<?=IMAGES_URL?>/logo-formater-transparent.png" style="max-height: 95%;height:70px;margin-top:10px;"/>
+   </a>
+   <?php endif;?>
+   <a href="https://www.etalab.gouv.fr/" target="_blank">
+     <img src="<?=IMAGES_URL?>/logo-etalab-recentre.png" style="margin-left:30px;max-height: 95%;height:70px;margin-top:10px;"/>
+   </a>
+</div>
+<div style="float:right">
+ <ul>
+  <li>
+    <a href="<?php printer('url_etalab_on_formater')?>" target="_blank"><?php printer('etalab_on_formater')?></a>
+  </li>
+  <!-- language switcher -->
+  <style>
+  ul.sub-menu {
+  position:absolute;
+  }
+  ul.sub-menu li{
+    float: left;
+    position: relative;
+    text-align: left;
+  }
+  </style>
+  <li><a href="#pll_switcher"><img src="<?=IMAGES_URL?>/<?=$lang?>.png" title="<?=langname($lang)?>" alt="<?=langname($lang)?>">
+  <span style="margin-left:0.3em;"><?=langname($lang)?></span></a>
+    <ul class="sub-menu"> 
+     <?php foreach($language['other_language'] as $key => $value):?>
+       <li>
+       <a href="<?=$language['url_other_language'][$key]?>"  lang="<?=$key?>">
+       <img src="<?=IMAGES_URL?>/<?=$key?>.png"> <?=$value?></span></a>
+       </li>
+     <?php endforeach;?>
+  </ul>
+   --
+  
+  <li>
+  
+     <a href="<?php printer('url_other_language')?>"><?php printer('other_language')?></a>
+  </li>
+
+</div>
