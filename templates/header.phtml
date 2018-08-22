@@ -29,14 +29,21 @@
   <style>
   ul.sub-menu {
   position:absolute;
+  padding:0;
+  max-width:150px;
+  display:none;
   }
+   #witcher:hover + ul.sub-menu {
+     display:block;
+   }
   ul.sub-menu li{
     float: left;
     position: relative;
+    margin-left:0;
     text-align: left;
   }
   </style>
-  <li><a href="#pll_switcher"><img src="<?=IMAGES_URL?>/<?=$lang?>.png" title="<?=langname($lang)?>" alt="<?=langname($lang)?>">
+  <li><a id ="switcher" href="#pll_switcher"><img src="<?=IMAGES_URL?>/<?=$lang?>.png" title="<?=langname($lang)?>" alt="<?=langname($lang)?>">
   <span style="margin-left:0.3em;"><?=langname($lang)?></span></a>
     <ul class="sub-menu"> 
      <?php foreach($language['other_language'] as $key => $value):?>
