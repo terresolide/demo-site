@@ -30,7 +30,7 @@
     <ul class="sub-menu">
    <?php foreach($data->demonstrations as $index => $demonstration):?>
     <li>
-       <?php if ($article_index === $index): ?>
+       <?php if (isset($article_index) && $article_index === $index): ?>
        <span style="opacity:0.6"><?=$demonstration->title->{$lang}?></span>
        <?php else:?>
        <a href="<?=$demonstration->url?>?lang=<?=$lang?>" title="<?=$demonstration->title->{$lang}?>">
