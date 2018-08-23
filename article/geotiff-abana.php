@@ -4,19 +4,6 @@
 */
 
 include_once "../config.php";
-
-// les informations sur les démos
-$content_file = file_get_contents( DEMONSTRATIONS_FILE);
-$data = json_decode($content_file);
-
-$demo = $data->demonstrations[2];
-// language
-//---------
-include_once INCLUDE_DIR . "/language.php";
- $pagelanguage = array(
-    "title" => (array)$demo->title
- );
- $language = array_merge($language, $pagelanguage);
-
- $content = CONTENT_DIR . "/geotiff-abana.phtml";
- include_once TEMPLATE_DIR. "/layout.phtml";
+$article_name = "geotiff-abana";
+$article_index = 2; 
+include_once TEMPLATE_DIR. "/layout.phtml";

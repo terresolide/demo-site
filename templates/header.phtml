@@ -28,11 +28,15 @@
        <span style="margin-left:0.3em;"><?php printer('demonstration');?></span>
     </a>
     <ul class="sub-menu">
-   <?php foreach($data->demonstrations as $demonstration):?>
+   <?php foreach($data->demonstrations as $index => $demonstration):?>
     <li>
+       <?php if ($article_index === $index): ?>
+       <span style="opacity:0.6"><?=$demonstration->title->{$lang}?></span>
+       <?php else:?>
        <a href="<?=$demonstration->url?>?lang=<?=$lang?>" title="<?=$demonstration->title->{$lang}?>">
        <?=$demonstration->title->{$lang}?>
        </a>
+       <?php endif;?>
     </li>
    <?php endforeach;?>
     </ul>

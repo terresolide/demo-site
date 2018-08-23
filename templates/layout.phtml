@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php 
+include_once INCLUDE_DIR . "/language.php";
+$demo = $data->demonstrations[$article_index];
+$language = array_merge($language, array("title" => (array)$demo->title));
+$content = CONTENT_DIR . "/".$article_name. ".phtml";
+
+
+?><!DOCTYPE html>
 <html>
 <head>
 <?php include_once TEMPLATE_DIR.'/meta.phtml'?>

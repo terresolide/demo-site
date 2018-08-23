@@ -1,22 +1,12 @@
 <?php 
 /**
- * Redirection page 
+ * Article page geotiff-abana
 */
 
 include_once "../config.php";
 
-// les informations sur les démos
-$content_file = file_get_contents( DEMONSTRATIONS_FILE);
-$data = json_decode($content_file);
+$article_name ="geotiff-rome";
 
-$demo = $data->demonstrations[1];
-// language
-//---------
-include_once INCLUDE_DIR . "/language.php";
- $pagelanguage = array(
-    "title" => (array)$demo->title
- );
- $language = array_merge($language, $pagelanguage);
+$article_index = 1;
 
- $content = CONTENT_DIR . "/geotiff-rome.phtml";
  include_once TEMPLATE_DIR. "/layout.phtml";
