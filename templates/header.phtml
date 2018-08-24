@@ -3,18 +3,18 @@
 
  ?>
  
- <div>
+ <div class="logo">
    <?php if(isset($home)):?>
    <a href="<?php printer('url_new');?>" target="_blank">
-     <img src="<?=IMAGES_URL?>/logo-formater-transparent.png" style="max-height: 95%;height:70px;margin-top:10px;"/>
+     <img src="<?=IMAGES_URL?>/logo-formater-transparent.png" />
    </a>
    <?php else: ?>
     <a href="<?=APP_URL?>?lang=<?=$lang?>">
-     <img src="<?=IMAGES_URL?>/logo-formater-transparent.png" style="max-height: 95%;height:70px;margin-top:10px;"/>
+     <img src="<?=IMAGES_URL?>/logo-formater-transparent.png" />
    </a>
    <?php endif;?>
    <a href="https://www.etalab.gouv.fr/" target="_blank">
-     <img src="<?=IMAGES_URL?>/logo-etalab-recentre.png" style="margin-left:30px;max-height: 95%;height:70px;margin-top:10px;"/>
+     <img src="<?=IMAGES_URL?>/logo-etalab-recentre.png" style="margin-left:30px;"/>
    </a>
 </div>
 <div style="float:right">
@@ -23,7 +23,7 @@
     <a href="<?php printer('url_etalab_on_formater')?>" target="_blank"><?php printer('etalab_on_formater')?></a>
   </li>
   <!-- demos -->
-  <li class="menu-demo" style="min-width:200px;">
+  <li class="menu-demo">
    <a id ="#demonstration" href="#demonstration">
        <span style="margin-left:0.3em;"><?php printer('demonstration');?></span>
     </a>

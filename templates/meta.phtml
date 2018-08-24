@@ -12,6 +12,26 @@
 	<meta property="og:locale:alternate" content="<?php printer("alternate");?>" />
 	<link href="images/formater_favicon-40x40.png" rel="icon" sizes="32x32">
 	<style>
+	#header{
+       /* background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;*/
+        background:#fff;
+        /* padding: 10px 50px;*/
+        height:15%;
+        box-shadow:  0 0 2px 1px #282a2d; 
+    }
+    #header ul{
+    	list-style-type: none;
+    }
+    #header ul li{
+       display: inline-block;
+       margin-right: 10px;
+    }
+   
+    #header > div{
+        padding:10px 30px;display:inline;max-height:100%;padding-left:10%;"
+    }
 	div.content{
 	   margin-bottom: 100px;
 	}
@@ -88,4 +108,23 @@
         -webkit-transition: padding 1s ease; /* Safari */
         transition: padding 1s ease;
     }
+    #header div.logo img{
+      max-height: 95%;
+      height:70px;
+      margin-top:10px;
+     }
+     @media screen and (max-width:1150px){
+      #header > div {
+       padding: 5px;
+       }
+       #header div.logo img{
+          height:50px;
+       }
+       li.menu-demo{
+          max-width:130px;
+          min-width:130px;
+          overflow:visible;
+       }
+    }
+    
 	</style>
