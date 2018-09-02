@@ -24,7 +24,7 @@
 				"srcimg": "<a title='Per Mentnafunangann [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0) o GFDL (http://www.gnu.org/copyleft/fdl.html)], de la Wikimedia Commons' href='https://commons.wikimedia.org/wiki/File:Lago_d%27Averno_1.jpg'><img width='512' alt='Lago d&#039;Averno 1' src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lago_d%27Averno_1.jpg/512px-Lago_d%27Averno_1.jpg'></a>",
 				"description": {
 					"fr": "Il s'agit d'un ensemble de 3 sous-fauchées réalisées avec la chaîne de calcul NSBAS et les images Sentinel1 du 30 mai 2018 et 23 juin 2018",
-					"en": "If consists of a set of 3 sub-swath made with the NSBAS calculation chain and the Sentinel1 images of May 30,2018 and June 23,2018"
+					"en": "If consists of a set of 3 sub-swaths made with the NSBAS calculation chain and the Sentinel1 images of May 30,2018 and June 23,2018"
 				},
 				"url": "/article/geotiff-rome"
 			},
@@ -37,8 +37,21 @@
 				"srcimg": "screenshot",
 				"description": {
 					"fr": "Il s'agit d'un ensemble de 2 sous-fauchées réalisées avec la chaîne de calcul NSBAS et les images Sentinel1 du 30 mai 2018 et 23 juin 2018",
-					"en": "If consists of a set of 3 sub-swath made with the NSBAS calculation chain and the Sentinel1 images of May 18,2018 and June 23,2018"
+					"en": "It consists of a set of 2 sub-swaths made with the NSBAS calculation chain and the Sentinel1 images of May 18,2018 and June 23,2018"
 				},
 				"url": "/article/geotiff-abana"
+			},
+            {
+                "title": {
+                    "fr": "ForM@Ter en action",
+                    "en": "ForM@Ter in action"
+                },
+                "img": "http://demo.poleterresolide.fr/images/demos/formater-in-action.png",
+                "srcimg": "screenshot",
+                "description": {
+                    "fr": "Découvrez dans cette vidéo, les étapes d'utilisation de la plateforme ForM@Ter",
+                    "en": "Discover in this video the steps of using the ForM@Ter platform"
+                },
+                "url": "/article/formater-in-action"
 		}]
 }
