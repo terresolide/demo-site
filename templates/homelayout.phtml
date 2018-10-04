@@ -60,6 +60,7 @@
     }
     #slide7{
         height:70%;
+        min-height:430px;
     }
     .slide_inside{
         padding:30px;
@@ -129,6 +130,14 @@
     .arrow{
       font-size:40px;
     }
+       @media screen and (max-width:940px){
+        #slide7 {
+          min-height:850px;
+        }
+       }
+       .demonstration > div:nth-child(4){
+         margin: 8px 15px 0 15px;
+       }
     @media screen and (max-width: 700px){
          .site-branding .description{
             font-size:2em;
