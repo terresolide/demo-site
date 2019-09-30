@@ -2,6 +2,19 @@
 	"demonstrations":
 		[
 			{
+	            "title": {
+	                "fr": "Testez l'interface en ligne",
+	                "en": "Test the interface in line"
+	            },
+	            "img": "http://demo.poleterresolide.fr/images/demos/interface-etalab.png",
+	            "srcimg": "screenshot",
+	            "description": {
+	                "fr": "Testez l'interface de la plateforme ForM@Ter en ligne",
+	                "en": "Test in line the steps of using the ForM@Ter platform"
+	            },
+	            "url": "/in-line"
+		},
+			{
 				"title": {
 					"fr": "Série temporelle Mexico",
 					"en": "Temporal serie on Mexico"
@@ -53,5 +66,6 @@
                     "en": "Discover in this video the steps of using the ForM@Ter platform"
                 },
                 "url": "/article/formater-in-action"
-		}]
+		}
+		]
 }
